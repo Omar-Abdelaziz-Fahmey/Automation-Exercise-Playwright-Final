@@ -1,0 +1,649 @@
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 00:43:30] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 00:43:32] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 00:43:32] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 00:43:52] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 00:43:56] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 00:43:56] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() failed
+[ERROR] - [28-11-2025 00:43:56] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: expected: <https://www.saucedemo.com/inventory.html> but was: <https://www.saucedemo.com/>
+[INFO] - [28-11-2025 00:43:58] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[ERROR] - [28-11-2025 00:43:58] [Thread-0] [automationexercises.utils.report.AllureReportGenerator] - Error copying history files File system element for parameter 'source' does not exist: 'C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\full-report\history'
+[INFO] - [28-11-2025 00:44:15] [Thread-0] [automationexercises.FileUtils] - Target File Path: "C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\reports\index.html", file was renamed to "AllureReport_2025-11-28_12-44-14.html".
+[INFO] - [28-11-2025 00:44:15] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 00:45:26] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 00:45:26] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 00:45:26] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 00:45:26] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 00:45:26] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 00:45:26] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 00:45:26] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 00:45:27] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 00:45:29] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 00:45:29] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 00:45:49] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 00:46:09] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 00:46:09] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 00:46:10] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 00:46:10] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [28-11-2025 00:46:26] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 01:00:04] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 01:00:04] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 01:00:04] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 01:00:04] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 01:00:04] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 01:00:04] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 01:00:04] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 01:00:05] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 01:00:08] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 01:00:08] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 01:00:28] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 01:00:35] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 01:00:35] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 01:00:40] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 01:00:40] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [28-11-2025 01:00:59] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 01:04:20] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 01:04:20] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 01:04:20] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 01:04:20] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 01:04:21] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 01:04:21] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 01:04:21] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 01:04:21] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 01:04:23] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 01:04:23] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 01:04:41] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 01:04:46] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 01:04:46] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 01:04:48] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 01:04:48] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [28-11-2025 01:05:10] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 01:07:04] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 01:07:09] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 01:07:09] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 01:07:31] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 01:07:40] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 01:07:40] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 01:07:41] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 01:07:41] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [28-11-2025 01:08:06] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 01:09:45] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 01:09:46] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 01:09:46] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 01:09:46] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 01:09:46] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 01:09:46] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 01:09:46] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 01:09:46] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 01:09:49] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 01:09:49] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 01:10:13] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 01:10:23] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 01:10:23] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 01:10:24] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 01:10:24] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[ERROR] - [28-11-2025 01:10:57] [Thread-0] [automationexercises.FileUtils] - Source 'C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\reports\index.html' does not exist
+[INFO] - [28-11-2025 01:10:57] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 19:34:26] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 19:34:27] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 19:34:27] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 19:34:27] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 19:34:27] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 19:34:27] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 19:34:27] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 19:34:27] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 19:34:34] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 19:34:34] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 19:35:06] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 19:35:11] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 19:35:11] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 19:35:13] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 19:35:15] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() started
+[INFO] - [28-11-2025 19:35:19] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() completed
+[INFO] - [28-11-2025 19:35:19] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() passed
+[INFO] - [28-11-2025 19:35:20] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 19:35:20] [Thread-1] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [28-11-2025 19:35:44] [Thread-1] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 19:39:18] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 19:39:19] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 19:39:19] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 19:39:19] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 19:39:19] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 19:39:19] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 19:39:19] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 19:39:20] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 19:39:23] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 19:39:23] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 19:39:46] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 19:39:53] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 19:39:53] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 19:39:54] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 19:39:56] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() started
+[INFO] - [28-11-2025 19:40:02] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() completed
+[INFO] - [28-11-2025 19:40:02] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() passed
+[INFO] - [28-11-2025 19:40:03] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 19:42:14] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 19:42:18] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 19:42:18] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 19:42:35] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 19:42:44] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 19:42:44] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 19:42:46] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 19:42:46] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [28-11-2025 19:43:00] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 19:58:48] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 19:58:48] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 19:58:48] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 19:58:48] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 19:58:48] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 19:58:48] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 19:58:48] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 19:58:49] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 19:58:51] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 19:58:51] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 19:59:09] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 19:59:14] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 19:59:14] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 19:59:15] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 19:59:16] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() started
+[INFO] - [28-11-2025 19:59:20] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() completed
+[INFO] - [28-11-2025 19:59:20] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginFilterProductsSelectFirstTwoProductsGetToCartRemoveSecondProductFromCartCompleteCheckout() passed
+[INFO] - [28-11-2025 19:59:21] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 19:59:38] [Thread-1] [automationexercises.FileUtils] - Target File Path: "C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\reports\index.html", file was renamed to "AllureReport_2025-11-28_07-59-38.html".
+[INFO] - [28-11-2025 19:59:39] [Thread-1] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [28-11-2025 20:02:02] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [28-11-2025 20:02:02] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Playwright-Test (1)\Playwright-Test\test-output\Logs\logs.log
+[INFO] - [28-11-2025 20:02:02] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [28-11-2025 20:02:02] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [28-11-2025 20:02:02] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [28-11-2025 20:02:02] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [28-11-2025 20:02:02] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [28-11-2025 20:02:03] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [28-11-2025 20:02:05] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [28-11-2025 20:02:05] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [28-11-2025 20:02:18] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() started
+[INFO] - [28-11-2025 20:02:22] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() completed
+[INFO] - [28-11-2025 20:02:22] [main] [automationexercises.listeners.JUnitTestListener] - Test Case successfulLoginSelectProductsGoToCartCompleteCheckout() passed
+[INFO] - [28-11-2025 20:02:24] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [28-11-2025 20:02:24] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [28-11-2025 20:02:38] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:08:28] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:08:28] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:08:28] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:08:28] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:08:28] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:08:28] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:08:28] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:08:29] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:08:31] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:08:31] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:08:33] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 00:10:18] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:10:18] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:10:18] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:10:18] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:10:18] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:10:18] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:10:18] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:10:20] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:10:20] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:10:34] [Thread-0] [automationexercises.FileUtils] - Target File Path: "C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\reports\index.html", file was renamed to "AllureReport_2025-11-29_12-10-34.html".
+[INFO] - [29-11-2025 00:10:34] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:11:44] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:11:44] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:11:44] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:11:44] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:11:44] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:11:44] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:11:44] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:11:45] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:11:52] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:11:52] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:12:12] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:12:46] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:12:46] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() failed
+[ERROR] - [29-11-2025 00:12:46] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Omar\AppData\Local\Temp\playwright-java-16139099236743223473\package\lib\server\progress.js:75:26)
+    at Frame.click (C:\Users\Omar\AppData\Local\Temp\playwright-java-16139099236743223473\package\lib\server\frames.js:1022:23)
+    at FrameDispatcher.click (C:\Users\Omar\AppData\Local\Temp\playwright-java-16139099236743223473\package\lib\server\dispatchers\frameDispatcher.js:158:30)
+    at FrameDispatcher._handleCommand (C:\Users\Omar\AppData\Local\Temp\playwright-java-16139099236743223473\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Omar\AppData\Local\Temp\playwright-java-16139099236743223473\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for locator("//a[.=' Home']")
+
+[INFO] - [29-11-2025 00:12:49] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:12:49] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 00:13:03] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:13:21] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:13:21] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:13:21] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:13:21] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:13:21] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:13:22] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:13:22] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:13:22] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:13:24] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:13:24] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:13:34] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:13:52] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:13:52] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() failed
+[ERROR] - [29-11-2025 00:13:52] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Error {
+  message='Error: strict mode violation: locator("h1 > span") resolved to 3 elements:
+    1) <span>Automation</span> aka getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("AutomationExercise")).locator("span")
+    2) <span>Automation</span> aka getByText("Automation", new Page.GetByTextOptions().setExact(true)).nth(1)
+    3) <span>Automation</span> aka getByText("Automation", new Page.GetByTextOptions().setExact(true)).nth(2)
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("h1 > span") resolved to 3 elements:
+    1) <span>Automation</span> aka getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("AutomationExercise")).locator("span")
+    2) <span>Automation</span> aka getByText("Automation", new Page.GetByTextOptions().setExact(true)).nth(1)
+    3) <span>Automation</span> aka getByText("Automation", new Page.GetByTextOptions().setExact(true)).nth(2)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\chromium\crExecutionContext.js:79:33)
+    at async LongStandingScope._race (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\javascript.js:229:12)
+    at async Frame.isVisibleInternal (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\frames.js:1151:14)
+    at async C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\frames.js:1144:14
+    at async ProgressController.run (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.isVisible (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\dispatchers\frameDispatcher.js:233:14)
+    at async LongStandingScope._race (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\Omar\AppData\Local\Temp\playwright-java-17420220512492283846\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-     - checking visibility of locator("h1 > span")
+
+[INFO] - [29-11-2025 00:13:54] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:13:54] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 00:14:08] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:19:16] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:19:17] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:19:17] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:19:17] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:19:17] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:19:17] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:19:17] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:19:17] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:19:19] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:19:19] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:19:29] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:19:41] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:19:41] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() failed
+[ERROR] - [29-11-2025 00:19:41] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: The Home Page label is not visible after navigation. ==> expected: <true> but was: <false>
+[INFO] - [29-11-2025 00:19:43] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:19:56] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:20:49] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:20:54] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:20:54] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:20:54] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:20:54] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:20:54] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:20:54] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:20:55] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:21:00] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:21:00] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:21:10] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:21:24] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:21:24] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() failed
+[ERROR] - [29-11-2025 00:21:24] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: The Home Page label is not visible after navigation. ==> expected: <true> but was: <false>
+[INFO] - [29-11-2025 00:21:25] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:21:25] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 00:21:40] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:24:30] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:24:36] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:24:36] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:24:45] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:25:23] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:25:23] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() failed
+[ERROR] - [29-11-2025 00:25:23] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Omar\AppData\Local\Temp\playwright-java-10124872024894029435\package\lib\server\progress.js:75:26)
+    at Frame.goto (C:\Users\Omar\AppData\Local\Temp\playwright-java-10124872024894029435\package\lib\server\frames.js:521:23)
+    at FrameDispatcher.goto (C:\Users\Omar\AppData\Local\Temp\playwright-java-10124872024894029435\package\lib\server\dispatchers\frameDispatcher.js:82:119)
+    at FrameDispatcher._handleCommand (C:\Users\Omar\AppData\Local\Temp\playwright-java-10124872024894029435\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Omar\AppData\Local\Temp\playwright-java-10124872024894029435\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+-   - navigating to "https://automationexercise.com/", waiting until "load"
+
+[INFO] - [29-11-2025 00:25:24] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:25:51] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:29:32] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:29:32] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:29:32] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:29:33] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:29:33] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:29:33] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:29:33] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:29:33] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:29:38] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:29:38] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:30:12] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:30:22] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:30:22] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() passed
+[INFO] - [29-11-2025 00:30:23] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:30:23] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 00:30:45] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:33:08] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:33:08] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:33:08] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:33:08] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:33:08] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:33:08] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:33:08] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:33:09] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:33:11] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:33:11] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:33:20] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:33:27] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:33:28] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() passed
+[INFO] - [29-11-2025 00:33:29] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:33:41] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 00:42:50] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 00:42:50] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 00:42:50] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 00:42:50] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 00:42:50] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 00:42:50] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 00:42:50] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 00:42:51] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 00:42:53] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 00:42:53] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 00:43:03] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 00:43:16] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 00:43:17] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() passed
+[INFO] - [29-11-2025 00:43:18] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 00:43:30] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 01:19:51] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 01:19:51] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 01:19:51] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 01:19:51] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 01:19:51] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 01:19:51] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 01:19:51] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 01:19:52] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 01:19:55] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 01:19:55] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 01:20:04] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() started
+[INFO] - [29-11-2025 01:20:17] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() completed
+[INFO] - [29-11-2025 01:20:17] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForVerifications() passed
+[INFO] - [29-11-2025 01:20:19] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 01:20:19] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 01:20:33] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 01:58:24] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 01:58:26] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 01:58:26] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 01:58:36] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() started
+[INFO] - [29-11-2025 01:58:45] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] - [29-11-2025 01:59:20] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() completed
+[INFO] - [29-11-2025 01:59:20] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() failed
+[ERROR] - [29-11-2025 01:59:20] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Omar\AppData\Local\Temp\playwright-java-3954721468909072178\package\lib\server\progress.js:75:26)
+    at Frame.fill (C:\Users\Omar\AppData\Local\Temp\playwright-java-3954721468909072178\package\lib\server\frames.js:1072:23)
+    at FrameDispatcher.fill (C:\Users\Omar\AppData\Local\Temp\playwright-java-3954721468909072178\package\lib\server\dispatchers\frameDispatcher.js:170:30)
+    at FrameDispatcher._handleCommand (C:\Users\Omar\AppData\Local\Temp\playwright-java-3954721468909072178\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Omar\AppData\Local\Temp\playwright-java-3954721468909072178\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for locator("Email Address").first()
+
+[INFO] - [29-11-2025 01:59:22] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 01:59:37] [Thread-0] [automationexercises.FileUtils] - Target File Path: "C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\reports\index.html", file was renamed to "AllureReport_2025-11-29_01-59-37.html".
+[INFO] - [29-11-2025 01:59:38] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 02:01:47] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 02:01:51] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 02:01:51] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 02:02:00] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() started
+[INFO] - [29-11-2025 02:02:10] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] - [29-11-2025 02:02:50] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() completed
+[INFO] - [29-11-2025 02:02:50] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() failed
+[ERROR] - [29-11-2025 02:02:50] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Omar\AppData\Local\Temp\playwright-java-7277862490143271399\package\lib\server\progress.js:75:26)
+    at Frame.fill (C:\Users\Omar\AppData\Local\Temp\playwright-java-7277862490143271399\package\lib\server\frames.js:1072:23)
+    at FrameDispatcher.fill (C:\Users\Omar\AppData\Local\Temp\playwright-java-7277862490143271399\package\lib\server\dispatchers\frameDispatcher.js:170:30)
+    at FrameDispatcher._handleCommand (C:\Users\Omar\AppData\Local\Temp\playwright-java-7277862490143271399\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Omar\AppData\Local\Temp\playwright-java-7277862490143271399\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByText("Password")
+
+[INFO] - [29-11-2025 02:02:50] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 02:04:14] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 02:04:14] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 02:04:14] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 02:04:14] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 02:04:14] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 02:04:14] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 02:04:14] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 02:04:15] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 02:04:17] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 02:04:17] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 02:04:28] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() started
+[INFO] - [29-11-2025 02:04:39] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] - [29-11-2025 02:04:46] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() completed
+[INFO] - [29-11-2025 02:04:46] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() failed
+[ERROR] - [29-11-2025 02:04:46] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Error {
+  message='Error: strict mode violation: getByText("Login") resolved to 3 elements:
+    1) <a href="/login">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Signup / Login"))
+    2) <h2>Login to your account</h2> aka getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Login to your account"))
+    3) <button type="submit" data-qa="login-button" class="btn btn-default">Login</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Login"))
+
+  name='Error
+  stack='Error: Error: strict mode violation: getByText("Login") resolved to 3 elements:
+    1) <a href="/login">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Signup / Login"))
+    2) <h2>Login to your account</h2> aka getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Login to your account"))
+    3) <button type="submit" data-qa="login-button" class="btn btn-default">Login</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Login"))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\chromium\crExecutionContext.js:79:33)
+    at async LongStandingScope._race (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\javascript.js:229:12)
+    at async C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\frames.js:965:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\frames.js:935:24)
+    at async C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\frames.js:1023:29
+    at async ProgressController.run (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.click (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\dispatchers\frameDispatcher.js:158:12)
+    at async LongStandingScope._race (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Omar\AppData\Local\Temp\playwright-java-13026217759438145222\package\lib\server\dispatchers\dispatcher.js:96:14)
+}
+Call log:
+-   - waiting for getByText("Login")
+
+[INFO] - [29-11-2025 02:04:48] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 02:05:02] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 02:07:22] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 02:07:22] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 02:07:22] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 02:07:22] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 02:07:22] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 02:07:23] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 02:07:23] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 02:07:23] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 02:07:25] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 02:07:25] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 02:07:34] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() started
+[INFO] - [29-11-2025 02:07:47] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] - [29-11-2025 02:07:53] [main] [automationexercises.pages.components.NavigationBarComponent] - Verifying logged in user label. Actual: Automation_Test | Expected: Logged in as Automation_Test
+[INFO] - [29-11-2025 02:07:55] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() completed
+[INFO] - [29-11-2025 02:07:55] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() failed
+[ERROR] - [29-11-2025 02:07:55] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Signup label is not visible ==> expected: <true> but was: <false>
+[INFO] - [29-11-2025 02:07:56] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 02:07:56] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 02:08:16] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 02:16:21] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 02:16:24] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 02:16:24] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 02:16:36] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() started
+[INFO] - [29-11-2025 02:16:46] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+[INFO] - [29-11-2025 02:16:52] [main] [automationexercises.pages.components.NavigationBarComponent] - Verifying logged in user label. Actual: Automation_Test | Expected: Logged in as Automation_Test
+[INFO] - [29-11-2025 02:16:54] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 200, "message": "Account deleted!"}</body>
+</html>
+[INFO] - [29-11-2025 02:16:55] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() completed
+[INFO] - [29-11-2025 02:16:55] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForSignUpLoginPage() passed
+[INFO] - [29-11-2025 02:16:57] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 02:16:57] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 02:17:11] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 02:24:36] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 02:24:36] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 02:24:36] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 02:24:36] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 02:24:36] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 02:24:36] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 02:24:36] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 02:24:37] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 02:24:40] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 02:24:40] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 02:24:49] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() started
+[ERROR] - [29-11-2025 02:24:59] [main] [automationexercises.utils.dataReader.JsonReader] - Error reading json file for path: titleMale No results for path: $['titleMale']
+[INFO] - [29-11-2025 02:24:59] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() completed
+[INFO] - [29-11-2025 02:24:59] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() failed
+[ERROR] - [29-11-2025 02:24:59] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Invalid title: 
+[INFO] - [29-11-2025 02:25:01] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 02:25:15] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 02:26:04] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 02:26:04] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 02:26:04] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 02:26:04] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 02:26:04] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 02:26:04] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 02:26:04] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 02:26:05] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 02:26:07] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 02:26:07] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 02:26:15] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() started
+[INFO] - [29-11-2025 02:26:24] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() completed
+[INFO] - [29-11-2025 02:26:24] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() failed
+[ERROR] - [29-11-2025 02:26:24] [main] [automationexercises.listeners.JUnitTestListener] - Failure reason: Error {
+  message='Error: strict mode violation: locator("p") resolved to 4 elements:
+    1) <p>Congratulations! Your new account has been succes…</p> aka getByText("Congratulations! Your new")
+    2) <p>You can now take advantage of member privileges t…</p> aka getByText("You can now take advantage of")
+    3) <p>…</p> aka getByText("Get the most recent updates")
+    4) <p class="pull-left">Copyright © 2021 All rights reserved</p> aka getByText("Copyright © 2021 All rights")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("p") resolved to 4 elements:
+    1) <p>Congratulations! Your new account has been succes…</p> aka getByText("Congratulations! Your new")
+    2) <p>You can now take advantage of member privileges t…</p> aka getByText("You can now take advantage of")
+    3) <p>…</p> aka getByText("Get the most recent updates")
+    4) <p class="pull-left">Copyright © 2021 All rights reserved</p> aka getByText("Copyright © 2021 All rights")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\chromium\crExecutionContext.js:79:33)
+    at async LongStandingScope._race (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\javascript.js:229:12)
+    at async Frame.isVisibleInternal (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\frames.js:1151:14)
+    at async C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\frames.js:1144:14
+    at async ProgressController.run (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\progress.js:79:22)
+    at async FrameDispatcher.isVisible (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\dispatchers\frameDispatcher.js:233:14)
+    at async LongStandingScope._race (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\dispatchers\dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (C:\Users\Omar\AppData\Local\Temp\playwright-java-18083246382288346665\package\lib\server\dispatchers\dispatcher.js:361:22)
+}
+Call log:
+-     - checking visibility of locator("p")
+
+[INFO] - [29-11-2025 02:26:26] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 02:26:26] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 02:26:38] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 02:29:32] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 02:29:35] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 02:29:35] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 02:29:45] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() started
+[INFO] - [29-11-2025 02:30:02] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 200, "message": "Account deleted!"}</body>
+</html>
+[INFO] - [29-11-2025 02:30:04] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() completed
+[INFO] - [29-11-2025 02:30:04] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() passed
+[INFO] - [29-11-2025 02:30:05] [main] [automationexercises.listeners.JUnitTestListener] - All tests in class completed
+[INFO] - [29-11-2025 02:30:05] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Generating Allure reports...
+[INFO] - [29-11-2025 02:30:16] [Thread-0] [automationexercises.listeners.JUnitTestListener] - Test Execution Finished
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.listeners.JUnitTestListener] - Test Execution started
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.FileUtils] - File deleted: C:\Users\Omar\Downloads\Final\Playwright-Project\test-output\Logs\logs.log
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.listeners.JUnitTestListener] - Directories cleaned
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.FileUtils] - Directory created: test-output\screenshots\
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.listeners.JUnitTestListener] - Directories created
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.utils.dataReader.PropertyReader] - Properties file loaded successfully
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.listeners.JUnitTestListener] - Properties loaded
+[INFO] - [29-11-2025 14:54:42] [main] [automationexercises.utils.report.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [29-11-2025 14:54:44] [main] [automationexercises.utils.report.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [29-11-2025 14:54:44] [main] [automationexercises.listeners.JUnitTestListener] - Allure environment set
+[INFO] - [29-11-2025 14:54:56] [main] [automationexercises.listeners.JUnitTestListener] - Test Case testCaseForRegisterPage() started
+[INFO] - [29-11-2025 14:55:13] [main] [automationexercises.apis.UserManagementAPI] - <html>
+  <body>{"responseCode": 200, "message": "Account deleted!"}</body>
+</html>

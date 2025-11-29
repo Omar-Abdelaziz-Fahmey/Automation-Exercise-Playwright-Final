@@ -1,0 +1,15 @@
+{
+  "contacts" :
+  {
+    "name": "Automation Tester",
+    "email": "automationtester@gmail.com",
+    "subject": "Test Subject",
+    "message": "This is a test message for contact us form.",
+    "filePath": "src/test/resources/test-data/contactus-file.txt"
+  },
+  "messages" :
+  {
+    "successMessage": "Success! Your details have been submitted successfully.",
+    "alertMessage": "Press OK to proceed!"
+  }
+}

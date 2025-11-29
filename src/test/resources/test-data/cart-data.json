@@ -1,0 +1,20 @@
+{
+  "product" :
+  {
+    "name": "Men Tshirt",
+    "price": "Rs. 400",
+    "quantity": "1",
+    "total": "Rs. 400"
+  },
+  "product2" :
+  {
+    "name": "Sleeveless Dress",
+    "price": "Rs. 1000",
+    "quantity": "10",
+    "total": "Rs. 10000"
+  },
+  "messages" :
+  {
+    "cartAdded": "Your product has been added to cart."
+  }
+}

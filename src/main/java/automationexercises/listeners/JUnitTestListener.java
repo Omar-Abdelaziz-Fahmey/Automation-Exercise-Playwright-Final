@@ -1,7 +1,6 @@
 package automationexercises.listeners;
 
 import com.microsoft.playwright.Page;
-import io.qameta.allure.Allure;
 import org.junit.jupiter.api.extension.*;
 import automationexercises.FileUtils;
 import automationexercises.utils.dataReader.PropertyReader;

@@ -25,7 +25,9 @@ public class BaseTest {
     @BeforeAll
     @Step("Initialize Playwright browser")
     public static void setUpAll() {
+
         PlaywrightManager.start();
+
     }
 
     @BeforeEach
@@ -36,13 +38,6 @@ public class BaseTest {
         // Add test metadata
         String testName = testInfo.getDisplayName();
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-
-        Allure.parameter("Test Name", testName);
-        Allure.parameter("Test Start Time", timestamp);
-        Allure.parameter("Test Class",
-                testInfo.getTestClass().map(Class::getName).orElse("Unknown"));
-        Allure.parameter("Test Method", testInfo.getTestMethod().map(m ->
-                m.getName()).orElse("Unknown"));
     }
 
     @AfterEach

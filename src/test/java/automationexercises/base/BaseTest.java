@@ -1,7 +1,7 @@
 package automationexercises.base;
 
+import automationexercises.PlaywrightManager;
 import com.microsoft.playwright.Page;
-//import io.qameta.allure.Allure;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.AfterAll;
@@ -18,7 +18,7 @@ import java.time.format.DateTimeFormatter;
 
 import io.qameta.allure.junit5.AllureJunit5;
 
-@ExtendWith({ AllureJunit5.class, JUnitTestListener.class })
+@ExtendWith({AllureJunit5.class, JUnitTestListener.class})
 public class BaseTest {
     protected Page page;
 
@@ -37,12 +37,12 @@ public class BaseTest {
         String testName = testInfo.getDisplayName();
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
-        // Allure.parameter("Test Name", testName);
-        // Allure.parameter("Test Start Time", timestamp);
-        // Allure.parameter("Test Class",
-        // testInfo.getTestClass().map(Class::getName).orElse("Unknown"));
-        // Allure.parameter("Test Method", testInfo.getTestMethod().map(m ->
-        // m.getName()).orElse("Unknown"));
+        Allure.parameter("Test Name", testName);
+        Allure.parameter("Test Start Time", timestamp);
+        Allure.parameter("Test Class",
+                testInfo.getTestClass().map(Class::getName).orElse("Unknown"));
+        Allure.parameter("Test Method", testInfo.getTestMethod().map(m ->
+                m.getName()).orElse("Unknown"));
     }
 
     @AfterEach
@@ -53,8 +53,8 @@ public class BaseTest {
             try {
                 byte[] screenshot = page.screenshot();
                 String screenshotName = testInfo.getDisplayName() + " - Final State";
-                 Allure.addAttachment(screenshotName, "image/png",
-                 new ByteArrayInputStream(screenshot), ".png");
+                Allure.addAttachment(screenshotName, "image/png",
+                        new ByteArrayInputStream(screenshot), ".png");
             } catch (Exception e) {
                 System.err.println("Failed to capture screenshot: " + e.getMessage());
             }

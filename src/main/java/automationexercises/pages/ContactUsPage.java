@@ -4,6 +4,7 @@ import automationexercises.pages.components.NavigationBarComponent;
 import automationexercises.utils.dataReader.PropertyReader;
 import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.testng.Assert;
@@ -45,7 +46,8 @@ public class ContactUsPage {
 
     @Step("Navigate to Contact Us page")
     public ContactUsPage navigate() {
-        page.navigate(PropertyReader.getProperty("baseUrlWeb") + contactUsEndpoint);
+        page.navigate(PropertyReader.getProperty("baseUrlWeb") + contactUsEndpoint,
+                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
         return this;
     }
 

@@ -19,7 +19,7 @@ public class CartTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
 
     public void verifyProductDetailsOnCartWithOutLogInTC(){
-        new ProductsPage(page).navigate()
+        new ProductsPage(page).navigationBar.clickProductsButton()
                 .clickOnAddToCart(testData.getJsonData("product.name"))
                 .validateProductAddedToCart(testData.getJsonData("messages.cartAdded"))
                 .clickOnViewCart()
@@ -34,7 +34,7 @@ public class CartTest extends BaseTest {
     @Description("Verify product quantity in cart")
     @Severity(SeverityLevel.CRITICAL)
     public void verifyProductQuantityInCartTC(){
-        new ProductsPage(page).navigate()
+        new ProductsPage(page).navigationBar.clickProductsButton()
                 .clickOnViewProduct(testData.getJsonData("product2.name"))
                 .setProductQuantity(testData.getJsonData("product2.quantity"))
                 .clickOnAddToCart()

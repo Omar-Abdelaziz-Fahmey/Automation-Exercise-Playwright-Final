@@ -65,6 +65,7 @@ public class BaseTest {
     @AfterAll
     @Step("Stop Playwright and cleanup resources")
     public static void tearDownAll() {
+        //PlaywrightManager.closePage();
         PlaywrightManager.stop();
     }
 }

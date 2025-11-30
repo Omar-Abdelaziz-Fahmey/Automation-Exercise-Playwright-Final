@@ -6,6 +6,7 @@ import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitForSelectorState;
+import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 
@@ -57,7 +58,8 @@ public class ProductsPage {
     // actions
     @Step("Navigate to Products Page")
     public ProductsPage navigate() {
-        page.navigate((PropertyReader.getProperty("baseUrlWeb") + productPage));
+        page.navigate((PropertyReader.getProperty("baseUrlWeb") + productPage),
+                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
         return this;
     }
 

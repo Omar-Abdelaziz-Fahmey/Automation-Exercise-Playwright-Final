@@ -18,7 +18,7 @@ import java.time.format.DateTimeFormatter;
 
 import io.qameta.allure.junit5.AllureJunit5;
 
-@ExtendWith({AllureJunit5.class, JUnitTestListener.class})
+@ExtendWith({ AllureJunit5.class, JUnitTestListener.class })
 public class BaseTest {
     protected Page page;
 

@@ -11,13 +11,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import automationexercises.base.BaseTest;
-import automationexercises.data.TestData;
 import automationexercises.pages.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-@Epic("SwagLabs E-Commerce Testing")
-@Feature("Complete Checkout Flow")
+@Epic("Automation Exercise")
+@Feature("Testing Various UI Components and User Management")
 public class TEST extends BaseTest {
 
     JsonReader testData = new JsonReader("register-data");

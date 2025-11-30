@@ -1,8 +1,6 @@
 package automationexercises.pages;
 
-
 import automationexercises.pages.components.NavigationBarComponent;
-import automationexercises.utils.actions.PageActions;
 import automationexercises.utils.dataReader.PropertyReader;
 import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Locator;
@@ -13,48 +11,42 @@ import org.junit.jupiter.api.Assertions;
 
 public class ProductsPage {
 
-
     private final Page page;
-    private final PageActions pageActions;
     public NavigationBarComponent navigationBar;
 
     public ProductsPage(Page page) {
         this.page = page;
-        this.pageActions = new PageActions(page);
         this.navigationBar = new NavigationBarComponent(page);
     }
 
-    //variables
+    // variables
     final private String productPage = "/products";
 
-
-    //locators
-    private final String searchField = "#search_product";
+    // locators
+    private final String searchField = "Search Product";
     private final String searchButton = "#submit_search";
     private final String itemAddedLabel = ".modal-body > p";
     private final String viewCartButton = "p > [href=\"/view_cart\"]";
     private final String continueShoppingButton = ".modal-footer >button";
 
-
-    //dynamic locators
-
+    // dynamic locators
 
     private String productName(String productName) {
         return "//div[@class='features_items'] //div[@class='overlay-content'] /p[.='" + productName + "']";
     }
 
     private String productPrice(String productName) {
-        return "//div[@class='features_items'] //div[@class='overlay-content'] /p[.='" + productName + "'] //preceding-sibling::h2";
+        return "//div[@class='features_items'] //div[@class='overlay-content'] /p[.='" + productName
+                + "'] //preceding-sibling::h2";
     }
-
 
     private String hoverOnProduct(String productName) {
         return "//div[@class='features_items'] //div[@class='productinfo text-center'] /p[.='" + productName + "']";
     }
 
-
     private String addToCartButton(String productName) {
-        return "//div[@class='features_items'] //div[@class='overlay-content'] /p[.='" + productName + "'] //following-sibling::a";
+        return "//div[@class='features_items'] //div[@class='overlay-content'] /p[.='" + productName
+                + "'] //following-sibling::a";
 
     }
 
@@ -62,8 +54,7 @@ public class ProductsPage {
         return "//p[.='" + productName + "'] //following::div[@class='choose'][1]";
     }
 
-
-    //actions
+    // actions
     @Step("Navigate to Products Page")
     public ProductsPage navigate() {
         page.navigate((PropertyReader.getProperty("baseUrlWeb") + productPage));
@@ -72,8 +63,8 @@ public class ProductsPage {
 
     @Step("Search for product: {productName}")
     public ProductsPage searchProduct(String productName) {
-        pageActions.find(searchField).fill(productName);
-        pageActions.find(searchButton).click();
+        page.getByPlaceholder(searchField).fill(productName);
+        page.locator(searchButton).click();
         return this;
     }
 
@@ -84,8 +75,8 @@ public class ProductsPage {
         Locator addBtn = page.locator(addToCartButton(productName));
 
         // Ensure hover is applied correctly
-        product.hover(new Locator.HoverOptions().setForce(true));
-
+        //product.hover(new Locator.HoverOptions().setForce(true));
+        product.hover();
         // Wait for button to become visible after hover
         addBtn.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
 
@@ -96,30 +87,29 @@ public class ProductsPage {
 
     @Step("Click on View Product for product: {productName}")
     public ProductDetailsPage clickOnViewProduct(String productName) {
-        pageActions.find(viewProduct(productName));
+        page.locator(viewProduct(productName)).click();
         return new ProductDetailsPage(page);
     }
 
     @Step("Click on View Cart")
     public CartPage clickOnViewCart() {
-        pageActions.find(viewCartButton).click();
+        page.locator(viewCartButton).click();
         return new CartPage(page);
     }
 
     @Step("Click on Continue Shopping")
     public ProductsPage clickOnContinueShopping() {
-        pageActions.find(continueShoppingButton).click();
+        page.locator(continueShoppingButton).click();
         return this;
     }
 
-
-    //validations
+    // validations
     @Step("Validate product details for {productName} with price {productPrice}")
     public ProductsPage validateProductDetails(String productName, String productPrice) {
-        pageActions.find(hoverOnProduct(productName)).hover();
-        String actualProductName = pageActions.find(this.productName(productName)).innerText();
-        pageActions.find(hoverOnProduct(productName)).hover();
-        String actualProductPrice = pageActions.find(this.productPrice(productName)).innerText();
+        page.locator(hoverOnProduct(productName)).hover();
+        String actualProductName = page.locator(this.productName(productName)).innerText();
+        page.locator(hoverOnProduct(productName)).hover();
+        String actualProductPrice = page.locator(this.productPrice(productName)).innerText();
         LogsManager.info("Validating product details for: " + actualProductName, " with price: " + actualProductPrice);
 
         Assertions.assertEquals(productName, actualProductName, "Product name does not match");
@@ -129,12 +119,10 @@ public class ProductsPage {
 
     @Step("Validate item added label contains: {expectedText}")
     public ProductsPage validateProductAddedToCart(String expectedText) {
-        String actualText = pageActions.find(itemAddedLabel).nth(0).innerText();
+        String actualText = page.locator(itemAddedLabel).nth(0).innerText();
         LogsManager.info("Validating item added label. Actual: " + actualText + " | Expected: " + expectedText);
         Assertions.assertEquals(expectedText, actualText, "Item added label does not match expected value.");
         return this;
     }
 
-
 }
-

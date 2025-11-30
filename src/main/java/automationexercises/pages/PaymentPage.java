@@ -2,9 +2,12 @@ package automationexercises.pages;
 
 
 import automationexercises.FileUtils;
+import com.microsoft.playwright.Download;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
+
+import java.nio.file.Paths;
 
 public class PaymentPage {
 
@@ -43,7 +46,17 @@ public class PaymentPage {
 
     @Step("Click on download invoice button")
     public PaymentPage clickOnDownloadInvoiceButton() {
-        page.locator(downloadInvoiceButton).click();
+
+        // Wait for the download to start
+        Download download = page.waitForDownload(() -> {
+            // Perform the action that initiates download
+            page.locator(downloadInvoiceButton).click();
+        });
+
+        String userDir = System.getProperty("user.dir");
+        String downloadPath = userDir + "\\src\\test\\resources\\downloads";
+
+        download.saveAs(Paths.get(downloadPath ,"invoice.txt"));
         return this;
     }
 

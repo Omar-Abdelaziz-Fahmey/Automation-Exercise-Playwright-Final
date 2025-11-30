@@ -29,10 +29,11 @@ public class ProductsTest extends BaseTest {
                 );
     }
 
+
     @Test
     @Description("Add product to cart without logging in")
     public void addToCartWithoutLoggingInTest() {
-        new ProductsPage(page).navigate()
+        new ProductsPage(page).navigationBar.clickProductsButton()
                 .clickOnAddToCart(testData.getJsonData("product1.name"))
                 .validateProductAddedToCart(
                         testData.getJsonData("messages.cartAdded")

@@ -3,6 +3,7 @@ package automationexercises.pages;
 import automationexercises.utils.dataReader.PropertyReader;
 import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 
@@ -23,7 +24,8 @@ public class TestCasesPage {
     // actions
     @Step("Navigate to Test Cases page")
     public TestCasesPage navigate() {
-        page.navigate(PropertyReader.getProperty("baseUrlWeb") + testCasesEndpoint);
+        page.navigate(PropertyReader.getProperty("baseUrlWeb") + testCasesEndpoint,
+                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
         return this;
     }
 

@@ -5,6 +5,7 @@ import automationexercises.pages.ProductsPage;
 import automationexercises.utils.TimeManager;
 import automationexercises.utils.dataReader.JsonReader;
 import io.qameta.allure.*;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 
@@ -20,13 +21,14 @@ public class ProductsTest extends BaseTest {
     @Test
     @Description("Search for a product and validate its details")
     public void searchForProductAndValidateDetailsTest() {
-        new ProductsPage(page).navigate()
+        new ProductsPage(page).navigationBar.clickProductsButton()
                 .searchProduct(testData.getJsonData("searchedProduct.name"))
                 .validateProductDetails(
                         testData.getJsonData("searchedProduct.name"),
                         testData.getJsonData("searchedProduct.price")
                 );
     }
+
     @Test
     @Description("Add product to cart without logging in")
     public void addToCartWithoutLoggingInTest() {

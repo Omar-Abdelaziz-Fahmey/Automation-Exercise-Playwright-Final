@@ -4,6 +4,7 @@ import automationexercises.pages.*;
 import automationexercises.utils.dataReader.PropertyReader;
 import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 
@@ -37,7 +38,8 @@ public class NavigationBarComponent {
 
     @Step("Navigate to the web application")
     public NavigationBarComponent navigate() {
-        page.navigate(PropertyReader.getProperty("baseUrlWeb"));
+        page.navigate(PropertyReader.getProperty("baseUrlWeb"),
+                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
         return this;
     }
 

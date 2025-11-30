@@ -88,7 +88,8 @@ public class SignupLoginPage {
     // validations
     @Step("Verify signup label visible")
     public SignupLoginPage verifySignupLabelVisible() {
-        Assertions.assertTrue(page.locator(signupLabel).isVisible(), "Signup label is not visible");
+        Assertions.assertEquals("New User Signup!", page.locator(signupLabel).innerText(),
+                "Signup label is not visible");
         return this;
     }
 

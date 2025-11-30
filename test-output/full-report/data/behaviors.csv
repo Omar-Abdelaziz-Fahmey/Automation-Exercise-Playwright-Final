@@ -1,2 +1,5 @@
 "BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
-"0","SwagLabs E-Commerce Testing","0","Complete Checkout Flow","1","0","","0"
+"0","Automation Exercise","0","UI Contact Us Management","1","0","Contact Us Page Navigation - Happy Path","0"
+"0","Automation Exercise","0","UI Contact Us Management","1","0","Submit Contact Us Form without Attachment - Happy Path","0"
+"0","Automation Exercise","0","UI Contact Us Management","1","0","Submit Contact Us Form with Empty Email - Negative","0"
+"0","Automation Exercise","0","UI Contact Us Management","1","0","Submit Contact Us Form with Attachment - Happy Path","0"

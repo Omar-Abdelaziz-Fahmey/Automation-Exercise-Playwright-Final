@@ -75,13 +75,13 @@ public class ProductsPage {
         Locator addBtn = page.locator(addToCartButton(productName));
 
         // Ensure hover is applied correctly
-        //product.hover(new Locator.HoverOptions().setForce(true));
+        product.hover(new Locator.HoverOptions().setForce(true));
         product.hover();
         // Wait for button to become visible after hover
         addBtn.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
-
+        addBtn.hover(new Locator.HoverOptions().setForce(true));
         // Click the button (force = optional safety)
-        addBtn.click(new Locator.ClickOptions().setForce(true));
+        addBtn.click();
         return this;
     }
 

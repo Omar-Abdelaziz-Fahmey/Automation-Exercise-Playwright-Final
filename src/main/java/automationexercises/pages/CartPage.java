@@ -3,6 +3,7 @@ package automationexercises.pages;
 
 import automationexercises.utils.dataReader.PropertyReader;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 
@@ -47,7 +48,8 @@ public class CartPage {
     //Actions
     @Step("Navigate to CartPage")
     public CartPage navigate() {
-        page.navigate(PropertyReader.getProperty("baseUrlWeb") + cartEndpoint);
+        page.navigate(PropertyReader.getProperty("baseUrlWeb") + cartEndpoint,
+                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
         return this;
     }
 

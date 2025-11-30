@@ -1,9 +1,9 @@
 package automationexercises.pages;
 
-
 import automationexercises.utils.dataReader.PropertyReader;
 import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 
@@ -15,27 +15,26 @@ public class ProductDetailsPage {
         this.page = page;
     }
 
-
-    //vars
+    // vars
     private String productDetailsEndpoint = "/product-details/2";
 
-    //locators
+    // locators
     private final String productName = "div .product-information>h2";
     private final String productPrice = "span >span";
     private final String name = "#name";
     private final String email = "#email";
-    private final String reviewTextArea ="#review";
+    private final String reviewTextArea = "#review";
     private final String reviewButton = "#button-review";
     private final String reviewMsg = "#review-section span";
 
     private final String quantity = "#quantity";
     private final String addToCartButton = "*[type=button]";
 
-
-    //actions
+    // actions
     @Step("Navigating to product details")
     public ProductDetailsPage navigate() {
-        page.navigate(PropertyReader.getProperty("baseUrlWeb") + productDetailsEndpoint);
+        page.navigate(PropertyReader.getProperty("baseUrlWeb") + productDetailsEndpoint,
+                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
         return this;
     }
 
@@ -61,8 +60,7 @@ public class ProductDetailsPage {
         return new ProductsPage(page);
     }
 
-
-    //validations
+    // validations
     @Step("verify product details")
     public ProductDetailsPage verifyProductDetails(String productName, String productPrice) {
 
@@ -81,6 +79,5 @@ public class ProductDetailsPage {
         Assertions.assertEquals(msg, actualReviewMsg, "Review Message Verification Failed");
         return this;
     }
-
 
 }

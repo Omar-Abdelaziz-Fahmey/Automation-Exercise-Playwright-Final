@@ -4,7 +4,7 @@ import automationexercises.utils.dataReader.PropertyReader;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 
 public class CheckoutPage {
 
@@ -56,20 +56,19 @@ public class CheckoutPage {
                         String address1, String address2,
                         String city, String state, String zip, String country, String phone) {
 
-                Assertions.assertEquals((title + ". " + fName + " " + lName), page.locator(deliveryName).innerText(),
+                Assert.assertEquals(page.locator(deliveryName).innerText(), (title + ". " + fName + " " + lName),
                                 " Delivery Name is not matched");
-                Assertions.assertEquals(company, page.locator(deliveryCompany).innerText(),
+                Assert.assertEquals(page.locator(deliveryCompany).innerText(), company,
                                 "Delivery Company is not matched");
-                Assertions.assertEquals(address1, page.locator(deliveryAddress1).innerText(),
+                Assert.assertEquals(page.locator(deliveryAddress1).innerText(), address1,
                                 " Delivery Address1 is not matched");
-                Assertions.assertEquals(address2, page.locator(deliveryAddress2).innerText(),
+                Assert.assertEquals(page.locator(deliveryAddress2).innerText(), address2,
                                 " Delivery Address2 is not matched");
-                Assertions.assertEquals((city + " " + state + " " + zip),
-                                page.locator(deliveryCityStateZip).innerText(),
+                Assert.assertEquals(page.locator(deliveryCityStateZip).innerText(), (city + " " + state + " " + zip),
                                 " Delivery CityStateZip is not matched");
-                Assertions.assertEquals(country, page.locator(deliveryCountry).innerText(),
+                Assert.assertEquals(page.locator(deliveryCountry).innerText(), country,
                                 " Delivery Country is not matched");
-                Assertions.assertEquals(phone, page.locator(deliveryPhone).innerText(),
+                Assert.assertEquals(page.locator(deliveryPhone).innerText(), phone,
                                 " Delivery Phone is not matched");
                 return this;
         }
@@ -79,19 +78,19 @@ public class CheckoutPage {
                         String address1, String address2,
                         String city, String state, String zip, String country, String phone) {
 
-                Assertions.assertEquals((title + ". " + fName + " " + lName), page.locator(deliveryName).innerText(),
+                Assert.assertEquals(page.locator(deliveryName).innerText(), (title + ". " + fName + " " + lName),
                                 " Billing Name is not matched");
-                Assertions.assertEquals(company, page.locator(billingCompany).innerText(),
+                Assert.assertEquals(page.locator(billingCompany).innerText(), company,
                                 "Billing Company is not matched");
-                Assertions.assertEquals(address1, page.locator(deliveryAddress1).innerText(),
+                Assert.assertEquals(page.locator(deliveryAddress1).innerText(), address1,
                                 " Billing Address1 is not matched");
-                Assertions.assertEquals(address2, page.locator(billingAddress2).innerText(),
+                Assert.assertEquals(page.locator(billingAddress2).innerText(), address2,
                                 " Billing Address2 is not matched");
-                Assertions.assertEquals((city + " " + state + " " + zip), page.locator(billingCityStateZip).innerText(),
+                Assert.assertEquals(page.locator(deliveryCityStateZip).innerText(), (city + " " + state + " " + zip),
                                 " Billing CityStateZip is not matched");
-                Assertions.assertEquals(country, page.locator(billingCountry).innerText(),
+                Assert.assertEquals(page.locator(billingCountry).innerText(), country,
                                 " Billing Country is not matched");
-                Assertions.assertEquals(phone, page.locator(billingPhone).innerText(), " Billing Phone is not matched");
+                Assert.assertEquals(page.locator(billingPhone).innerText(), phone, " Billing Phone is not matched");
 
                 return this;
         }

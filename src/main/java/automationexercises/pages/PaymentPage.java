@@ -16,7 +16,7 @@ public class PaymentPage {
         this.page = page;
     }
 
-    // vars
+    // variables
     private String paymentEndpoint = "/payment";
 
     // locators

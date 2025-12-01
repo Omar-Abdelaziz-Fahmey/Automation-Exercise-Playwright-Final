@@ -5,7 +5,7 @@ import automationexercises.pages.ContactUsPage;
 import automationexercises.pages.components.NavigationBarComponent;
 import automationexercises.utils.dataReader.JsonReader;
 import io.qameta.allure.*;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
 @Epic("Automation Exercise")
 @Feature("UI Contact Us Management")
@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 public class ContactUsTest extends BaseTest {
         JsonReader testData = new JsonReader("contactus-data");
 
-        @Test
+        @Test(groups = { "contactus", "regression" })
         @Story("Contact Us Page Navigation - Happy Path")
         @Description("Verify that users can navigate to the Contact Us page from the navigation bar")
         @Severity(SeverityLevel.NORMAL)
@@ -23,7 +23,7 @@ public class ContactUsTest extends BaseTest {
                                 .verifyContactUsPageIsDisplayed();
         }
 
-        @Test
+        @Test(groups = { "contactus", "regression" })
         @Story("Submit Contact Us Form without Attachment - Happy Path")
         @Description("Verify that users can successfully submit the Contact Us form with valid data without attachment")
         @Severity(SeverityLevel.CRITICAL)
@@ -41,7 +41,7 @@ public class ContactUsTest extends BaseTest {
 
         }
 
-        @Test
+        @Test(groups = { "contactus", "regression" })
         @Story("Submit Contact Us Form with Attachment - Happy Path")
         @Description("Verify that users can successfully submit the Contact Us form with valid data and an attachment")
         @Severity(SeverityLevel.CRITICAL)
@@ -60,7 +60,7 @@ public class ContactUsTest extends BaseTest {
 
         }
 
-        @Test
+        @Test(groups = { "contactus", "regression" })
         @Story("Submit Contact Us Form with Empty Email - Negative")
         @Description("Verify that users cannot submit the Contact Us form with an empty Email field")
         @Severity(SeverityLevel.NORMAL)

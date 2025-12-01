@@ -6,7 +6,7 @@ import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 import org.testng.Assert;
 
 import java.io.File;
@@ -89,7 +89,7 @@ public class ContactUsPage {
     @Step("Verify Contact Us page is displayed")
     public ContactUsPage verifyContactUsPageIsDisplayed() {
         LogsManager.info("Verifying Contact Us page is displayed");
-        Assertions.assertTrue(page.locator(contactUsText).isVisible());
+        Assert.assertTrue(page.locator(contactUsText).isVisible());
         return this;
     }
 
@@ -99,7 +99,7 @@ public class ContactUsPage {
             String actualAlertText = dialog.message();
             LogsManager.info("Verifying alert message after submit actual: " + actualAlertText + " and expected: "
                     + expectedMessage);
-            Assertions.assertEquals(expectedMessage, actualAlertText, "Alert message is not matched");
+            Assert.assertEquals(actualAlertText, expectedMessage, "Alert message is not matched");
             dialog.accept();
         });
         return this;
@@ -110,42 +110,42 @@ public class ContactUsPage {
         String actualMessage = page.locator(successMessage).innerText();
         LogsManager.info("Verifying success message after submit actual: " + actualMessage + " and expected :"
                 + expectedMessage);
-        Assertions.assertEquals(expectedMessage, actualMessage, "Success message is not matched");
+        Assert.assertEquals(actualMessage, expectedMessage, "Success message is not matched");
         return this;
     }
 
     @Step("Verify success message is not visible")
     public ContactUsPage verifySuccessMessageIsNotVisible() {
         LogsManager.info("Verifying success message is not visible");
-        Assertions.assertFalse(page.locator(successMessage).isVisible());
+        Assert.assertFalse(page.locator(successMessage).isVisible());
         return this;
     }
 
     @Step("Verify Name field validation message")
     public ContactUsPage verifyNameFieldValidationMessage() {
         String validationMessage = (String) page.locator(nameInput).evaluate("element => element.validationMessage");
-        Assertions.assertEquals("Please fill out this field.", validationMessage, "Validation message is not matched");
+        Assert.assertEquals(validationMessage, "Please fill out this field.", "Validation message is not matched");
         return this;
     }
 
     @Step("Verify Email field validation message")
     public ContactUsPage verifyEmailFieldValidationMessage() {
         String validationMessage = (String) page.locator(emailInput).evaluate("element => element.validationMessage");
-        Assertions.assertEquals("Please fill out this field.", validationMessage, "Validation message is not matched");
+        Assert.assertEquals(validationMessage, "Please fill out this field.", "Validation message is not matched");
         return this;
     }
 
     @Step("Verify Subject field validation message")
     public ContactUsPage verifySubjectFieldValidationMessage() {
         String validationMessage = (String) page.locator(subjectInput).evaluate("element => element.validationMessage");
-        Assertions.assertEquals("Please fill out this field.", validationMessage, "Validation message is not matched");
+        Assert.assertEquals(validationMessage, "Please fill out this field.", "Validation message is not matched");
         return this;
     }
 
     @Step("Verify Message field validation message")
     public ContactUsPage verifyMessageFieldValidationMessage() {
         String validationMessage = (String) page.locator(messageInput).evaluate("element => element.validationMessage");
-        Assertions.assertEquals("Please fill out this field.", validationMessage, "Validation message is not matched");
+        Assert.assertEquals(validationMessage, "Please fill out this field.", "Validation message is not matched");
         return this;
     }
 

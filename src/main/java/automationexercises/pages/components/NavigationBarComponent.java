@@ -6,7 +6,7 @@ import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 
 public class NavigationBarComponent {
 
@@ -98,7 +98,7 @@ public class NavigationBarComponent {
     @Step("Verify that user is logged out into Login Page")
     public SignupLoginPage verifyLogoutButtonNotVisible() {
 
-        Assertions.assertTrue(page.locator(logoutButton).isHidden(),
+        Assert.assertTrue(page.locator(logoutButton).isHidden(),
                 "The Logout button is unexpectedly visible, suggesting the user is still logged in.");
         return new SignupLoginPage(page);
     }
@@ -106,7 +106,7 @@ public class NavigationBarComponent {
     @Step("Verify that Home Page is visible successfully")
     public NavigationBarComponent verifyHomePageVisible() {
 
-        Assertions.assertTrue(page.getByText(homePageLabel).isVisible(),
+        Assert.assertTrue(page.getByText(homePageLabel).isVisible(),
                 "The Home Page label is not visible after navigation.");
         return this;
     }
@@ -117,7 +117,7 @@ public class NavigationBarComponent {
         String actualName = page.locator(userLabel).textContent();
         LogsManager.info(
                 "Verifying logged in user label. Actual: " + actualName + " | Expected: Logged in as " + username);
-        Assertions.assertEquals(username, actualName,
+        Assert.assertEquals(actualName, username,
                 "Logged in user label does not match expected value. Expected: " + username + " | Actual: "
                         + actualName);
         return this;

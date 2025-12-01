@@ -1,11 +1,10 @@
 package automationexercises.pages;
 
-
 import automationexercises.utils.dataReader.PropertyReader;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 
 public class CartPage {
     private final Page page;
@@ -14,16 +13,15 @@ public class CartPage {
         this.page = page;
     }
 
-
-    //vars
+    // vars
     private String cartEndpoint = "/view_cart";
 
-    //locators
+    // locators
 
     private final String proceedToCheckoutButton = "//a[.='Proceed To Checkout']";
     private final String registerLoginButton = "//a[.='Register / Login']";
 
-    //dynamic locators
+    // dynamic locators
     private String productName(String productName) {
         return "(//h4  /a[.='" + productName + "'])[1]";
     }
@@ -44,8 +42,7 @@ public class CartPage {
         return "(//h4  /a[.='" + productName + "'] //following::td[@class='cart_delete'] /a)[1]";
     }
 
-
-    //Actions
+    // Actions
     @Step("Navigate to CartPage")
     public CartPage navigate() {
         page.navigate(PropertyReader.getProperty("baseUrlWeb") + cartEndpoint,
@@ -77,18 +74,18 @@ public class CartPage {
         return new SignupLoginPage(page);
     }
 
-
-    //Validations
+    // Validations
     @Step("Verify  Product Details On Cart")
-    public CartPage verifyProductDetailsOnCart(String productName, String productPrice, String productQuantity, String productTotal) {
+    public CartPage verifyProductDetailsOnCart(String productName, String productPrice, String productQuantity,
+            String productTotal) {
         String actualProductName = page.locator(productName(productName)).innerText();
         String actualProductPrice = page.locator(productPrice(productName)).innerText();
         String actualProductQuantity = page.locator(productQuantity(productName)).innerText();
         String actualProductTotal = page.locator(productTotal(productName)).innerText();
-        Assertions.assertEquals(productName, actualProductName, " Product Name is not matched");
-        Assertions.assertEquals(productPrice, actualProductPrice, " Product Price is not matched");
-        Assertions.assertEquals(productQuantity, actualProductQuantity, " Product Quantity is not matched");
-        Assertions.assertEquals(productTotal, actualProductTotal, " Product Total is not matched");
+        Assert.assertEquals(actualProductName, productName, " Product Name is not matched");
+        Assert.assertEquals(actualProductPrice, productPrice, " Product Price is not matched");
+        Assert.assertEquals(actualProductQuantity, productQuantity, " Product Quantity is not matched");
+        Assert.assertEquals(actualProductTotal, productTotal, " Product Total is not matched");
         return this;
     }
 }

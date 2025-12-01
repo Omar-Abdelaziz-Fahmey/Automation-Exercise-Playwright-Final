@@ -10,7 +10,8 @@ import automationexercises.pages.SignupLoginPage;
 import automationexercises.utils.TimeManager;
 import automationexercises.utils.dataReader.JsonReader;
 import io.qameta.allure.*;
-import org.junit.jupiter.api.*;
+import org.testng.annotations.*;
+import org.testng.ITestResult;
 
 import java.io.ByteArrayInputStream;
 import java.time.LocalDateTime;
@@ -18,52 +19,53 @@ import java.time.format.DateTimeFormatter;
 
 @Epic("Automation Exercise")
 @Feature("UI Payment")
-@Story("Payment")
-@Severity(SeverityLevel.CRITICAL)
 @Owner("Omar")
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class PaymentTest extends BaseTest {
     private final static String timestamp = TimeManager.getSimpleTimestamp();
     JsonReader testData = new JsonReader("checkout-data");
 
-    @Test
-    @Order(1)
+    @Test(groups = { "payment", "regression" })
+    @Story("Payment Flow")
+    @Description("Register a new account")
+    @Severity(SeverityLevel.CRITICAL)
     public void registerNewAccount() {
         new UserManagementAPI().createRegisterUserAccount(
-                        testData.getJsonData("name"),
-                        testData.getJsonData("email") + timestamp + "@gmail.com",
-                        testData.getJsonData("password"),
-                        testData.getJsonData("titleMale"),
-                        testData.getJsonData("day"),
-                        testData.getJsonData("month"),
-                        testData.getJsonData("year"),
-                        testData.getJsonData("firstName"),
-                        testData.getJsonData("lastName"),
-                        testData.getJsonData("companyName"),
-                        testData.getJsonData("address1"),
-                        testData.getJsonData("address2"),
-                        testData.getJsonData("country"),
-                        testData.getJsonData("zipcode"),
-                        testData.getJsonData("state"),
-                        testData.getJsonData("city"),
-                        testData.getJsonData("mobileNumber")
-                )
+                testData.getJsonData("name"),
+                testData.getJsonData("email") + timestamp + "@gmail.com",
+                testData.getJsonData("password"),
+                testData.getJsonData("titleMale"),
+                testData.getJsonData("day"),
+                testData.getJsonData("month"),
+                testData.getJsonData("year"),
+                testData.getJsonData("firstName"),
+                testData.getJsonData("lastName"),
+                testData.getJsonData("companyName"),
+                testData.getJsonData("address1"),
+                testData.getJsonData("address2"),
+                testData.getJsonData("country"),
+                testData.getJsonData("zipcode"),
+                testData.getJsonData("state"),
+                testData.getJsonData("city"),
+                testData.getJsonData("mobileNumber"))
                 .verifyUserCreatedSuccessfully();
     }
 
-    @Test
-    @Order(2)
+    @Test(dependsOnMethods = "registerNewAccount", groups = { "payment", "regression" })
+    @Story("Payment Flow")
+    @Description("Login to the account")
+    @Severity(SeverityLevel.CRITICAL)
     public void loginToAccount() {
         new SignupLoginPage(page).navigate()
                 .enterLoginEmail(testData.getJsonData("email") + timestamp + "@gmail.com")
                 .enterLoginPassword(testData.getJsonData("password"))
-                .clickLoginButton()
-                .navigationBar
+                .clickLoginButton().navigationBar
                 .verifyLoggedInUserName(testData.getJsonData("name"));
     }
 
-    @Test
-    @Order(3)
+    @Test(dependsOnMethods = "loginToAccount", groups = { "payment", "regression" })
+    @Story("Payment Flow")
+    @Description("Add product to cart")
+    @Severity(SeverityLevel.CRITICAL)
     public void addProductToCart() {
         new ProductsPage(page)
                 .navigate()
@@ -74,12 +76,13 @@ public class PaymentTest extends BaseTest {
                         testData.getJsonData("product.name"),
                         testData.getJsonData("product.price"),
                         testData.getJsonData("product.quantity"),
-                        testData.getJsonData("product.total")
-                );
+                        testData.getJsonData("product.total"));
     }
 
-    @Test
-    @Order(4)
+    @Test(dependsOnMethods = "addProductToCart", groups = { "payment", "regression" })
+    @Story("Payment Flow")
+    @Description("Proceed to checkout")
+    @Severity(SeverityLevel.CRITICAL)
     public void checkout() {
         new CartPage(page)
                 .clickOnProceedToCheckout()
@@ -94,8 +97,7 @@ public class PaymentTest extends BaseTest {
                         testData.getJsonData("state"),
                         testData.getJsonData("zipcode"),
                         testData.getJsonData("country"),
-                        testData.getJsonData("mobileNumber")
-                )
+                        testData.getJsonData("mobileNumber"))
                 .verifyBillingAddress(
                         testData.getJsonData("titleMale"),
                         testData.getJsonData("firstName"),
@@ -107,44 +109,42 @@ public class PaymentTest extends BaseTest {
                         testData.getJsonData("state"),
                         testData.getJsonData("zipcode"),
                         testData.getJsonData("country"),
-                        testData.getJsonData("mobileNumber")
-                );
+                        testData.getJsonData("mobileNumber"));
     }
 
-    @Test
-    @Order(5)
+    @Test(dependsOnMethods = "checkout", groups = { "payment", "regression" })
+    @Story("Payment Flow")
+    @Description("Make payment")
+    @Severity(SeverityLevel.CRITICAL)
     public void paymentTest() {
         new CheckoutPage(page)
                 .clickOnPlaceOrder()
-                .fillCardInfo(testData.getJsonData("card.cardName")
-                        ,testData.getJsonData("card.cardNumber"),
-                        testData.getJsonData("card.cvc")
-                                , testData.getJsonData("card.exMonth")
-                                , testData.getJsonData("card.exYear")
-                )
+                .fillCardInfo(testData.getJsonData("card.cardName"), testData.getJsonData("card.cardNumber"),
+                        testData.getJsonData("card.cvc"), testData.getJsonData("card.exMonth"),
+                        testData.getJsonData("card.exYear"))
 
                 .verifyPaymentSuccessMessage(testData.getJsonData("messages.paymentSuccess"));
     }
 
-    @Test
-    @Order(6)
+    @Test(dependsOnMethods = "paymentTest", groups = { "payment", "regression" })
+    @Story("Payment Flow")
+    @Description("Delete account")
+    @Severity(SeverityLevel.MINOR)
     public void deleteAccountAsPostCondition() {
         new UserManagementAPI()
-                .deleteUserAccount( testData.getJsonData("email") + timestamp + "@gmail.com",
-                        testData.getJsonData("password"
-                        ))
+                .deleteUserAccount(testData.getJsonData("email") + timestamp + "@gmail.com",
+                        testData.getJsonData("password"))
                 .verifyUserDeletedSuccessfully();
     }
 
-
-    @AfterEach
+    @AfterMethod
     @Step("Close page and capture final state")
-    public void tearDown(TestInfo testInfo) {
+    public void tearDown(ITestResult result) {
         if (page != null) {
             // Capture screenshot before closing (useful for both passed and failed tests)
             try {
                 byte[] screenshot = page.screenshot();
-                String screenshotName = testInfo.getDisplayName() + " - Final State";
+                String screenshotName = result.getName() + " - Final State";
                 Allure.addAttachment(screenshotName, "image/png",
                         new ByteArrayInputStream(screenshot), ".png");
             } catch (Exception e) {
@@ -155,16 +155,15 @@ public class PaymentTest extends BaseTest {
             String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
             // Allure.parameter("Test End Time", timestamp);
 
-            //PlaywrightManager.closePage();
+            // PlaywrightManager.closePage();
         }
     }
 
-    @AfterAll
+    @AfterClass
     @Step("Stop Playwright and cleanup resources")
-    public static void tearDownAll() {
+    public void tearDownAll() {
         PlaywrightManager.closePage();
         PlaywrightManager.stop();
     }
-
 
 }

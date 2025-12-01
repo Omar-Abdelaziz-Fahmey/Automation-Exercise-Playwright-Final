@@ -4,7 +4,7 @@ import automationexercises.pages.components.NavigationBarComponent;
 import automationexercises.utils.dataReader.PropertyReader;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 
 public class SignupLoginPage {
 
@@ -88,7 +88,7 @@ public class SignupLoginPage {
     // validations
     @Step("Verify signup label visible")
     public SignupLoginPage verifySignupLabelVisible() {
-        Assertions.assertEquals("New User Signup!", page.locator(signupLabel).innerText(),
+        Assert.assertEquals(page.locator(signupLabel).innerText(), "New User Signup!",
                 "Signup label is not visible");
         return this;
     }
@@ -96,14 +96,14 @@ public class SignupLoginPage {
     @Step("Verify login error message: {expectedMessage}")
     public SignupLoginPage verifyLoginErrorMessage(String expectedMessage) {
         String actualMessage = page.getByText(loginError).innerText();
-        Assertions.assertEquals(expectedMessage, actualMessage, "Login error message does not match");
+        Assert.assertEquals(actualMessage, expectedMessage, "Login error message does not match");
         return this;
     }
 
     @Step("Verify register error message: {expectedMessage}")
     public SignupLoginPage verifyRegisterErrorMessage(String expectedMessage) {
         String actualMessage = page.getByText(registerError).innerText();
-        Assertions.assertEquals(expectedMessage, actualMessage, "Register error message does not match");
+        Assert.assertEquals(actualMessage, expectedMessage, "Register error message does not match");
         return this;
     }
 

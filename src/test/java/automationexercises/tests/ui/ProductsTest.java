@@ -5,9 +5,7 @@ import automationexercises.pages.ProductsPage;
 import automationexercises.utils.TimeManager;
 import automationexercises.utils.dataReader.JsonReader;
 import io.qameta.allure.*;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
-
+import org.testng.annotations.Test;
 
 @Epic("Automation Exercise")
 @Feature("UI Product Management")
@@ -15,29 +13,28 @@ import org.junit.jupiter.api.Test;
 @Severity(SeverityLevel.CRITICAL)
 @Owner("Omar")
 public class ProductsTest extends BaseTest {
-    String timestamp = TimeManager.getSimpleTimestamp();
-    JsonReader testData = new JsonReader("products-data");
+        String timestamp = TimeManager.getSimpleTimestamp();
+        JsonReader testData = new JsonReader("products-data");
 
-    @Test
-    @Description("Search for a product and validate its details")
-    public void searchForProductAndValidateDetailsTest() {
-        new ProductsPage(page).navigationBar.clickProductsButton()
-                .searchProduct(testData.getJsonData("searchedProduct.name"))
-                .validateProductDetails(
-                        testData.getJsonData("searchedProduct.name"),
-                        testData.getJsonData("searchedProduct.price")
-                );
-    }
+        @Test(groups = { "product", "regression" })
+        @Story("Product Management")
+        @Description("Search for a product and validate its details")
+        public void searchForProductAndValidateDetailsTest() {
+                new ProductsPage(page).navigationBar.clickProductsButton()
+                                .searchProduct(testData.getJsonData("searchedProduct.name"))
+                                .validateProductDetails(
+                                                testData.getJsonData("searchedProduct.name"),
+                                                testData.getJsonData("searchedProduct.price"));
+        }
 
-
-    @Test
-    @Description("Add product to cart without logging in")
-    public void addToCartWithoutLoggingInTest() {
-        new ProductsPage(page).navigationBar.clickProductsButton()
-                .clickOnAddToCart(testData.getJsonData("product1.name"))
-                .validateProductAddedToCart(
-                        testData.getJsonData("messages.cartAdded")
-                );
-    }
+        @Test(groups = { "product", "regression" })
+        @Story("Product Management")
+        @Description("Add product to cart without logging in")
+        public void addToCartWithoutLoggingInTest() {
+                new ProductsPage(page).navigationBar.clickProductsButton()
+                                .clickOnAddToCart(testData.getJsonData("product1.name"))
+                                .validateProductAddedToCart(
+                                                testData.getJsonData("messages.cartAdded"));
+        }
 
 }

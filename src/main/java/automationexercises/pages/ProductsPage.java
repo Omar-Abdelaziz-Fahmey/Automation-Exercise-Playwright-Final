@@ -8,7 +8,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 
 public class ProductsPage {
 
@@ -114,8 +114,8 @@ public class ProductsPage {
         String actualProductPrice = page.locator(this.productPrice(productName)).innerText();
         LogsManager.info("Validating product details for: " + actualProductName, " with price: " + actualProductPrice);
 
-        Assertions.assertEquals(productName, actualProductName, "Product name does not match");
-        Assertions.assertEquals(productPrice, actualProductPrice, "Product price does not match");
+        Assert.assertEquals(actualProductName, productName, "Product name does not match");
+        Assert.assertEquals(actualProductPrice, productPrice, "Product price does not match");
         return this;
     }
 
@@ -123,7 +123,7 @@ public class ProductsPage {
     public ProductsPage validateProductAddedToCart(String expectedText) {
         String actualText = page.locator(itemAddedLabel).nth(0).innerText();
         LogsManager.info("Validating item added label. Actual: " + actualText + " | Expected: " + expectedText);
-        Assertions.assertEquals(expectedText, actualText, "Item added label does not match expected value.");
+        Assert.assertEquals(actualText, expectedText, "Item added label does not match expected value.");
         return this;
     }
 

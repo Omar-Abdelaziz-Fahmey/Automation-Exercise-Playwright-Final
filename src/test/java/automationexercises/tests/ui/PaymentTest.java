@@ -129,7 +129,7 @@ public class PaymentTest extends BaseTest {
     @Test(dependsOnMethods = "paymentTest", groups = { "payment", "regression" })
     @Story("Payment Flow")
     @Description("Delete account")
-    @Severity(SeverityLevel.MINOR)
+    @Severity(SeverityLevel.CRITICAL)
     public void deleteAccountAsPostCondition() {
         new UserManagementAPI()
                 .deleteUserAccount(testData.getJsonData("email") + timestamp + "@gmail.com",

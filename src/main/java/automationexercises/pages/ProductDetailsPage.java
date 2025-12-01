@@ -5,7 +5,7 @@ import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 
 public class ProductDetailsPage {
 
@@ -67,8 +67,8 @@ public class ProductDetailsPage {
         String actualProductName = page.locator(this.productName).innerText();
         String actualProductPrice = page.locator(this.productPrice).innerText();
         LogsManager.info("actual product name:", actualProductName, "actual price:", actualProductPrice);
-        Assertions.assertEquals(productName, actualProductName, "Product Name Verification Failed");
-        Assertions.assertEquals(productPrice, actualProductPrice, "Product Price Verification Failed");
+        Assert.assertEquals(actualProductName, productName);
+        Assert.assertEquals(actualProductPrice, productPrice);
         return this;
     }
 
@@ -76,7 +76,7 @@ public class ProductDetailsPage {
     public ProductDetailsPage verifyReviewMsg(String msg) {
         String actualReviewMsg = page.locator(reviewMsg).innerText();
         LogsManager.info("actual review message:", actualReviewMsg);
-        Assertions.assertEquals(msg, actualReviewMsg, "Review Message Verification Failed");
+        Assert.assertEquals(actualReviewMsg, msg);
         return this;
     }
 

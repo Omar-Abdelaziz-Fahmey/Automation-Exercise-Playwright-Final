@@ -3,12 +3,14 @@ package automationexercises.pages;
 import automationexercises.pages.components.NavigationBarComponent;
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class SignupPage {
 
     private final Page page;
     public NavigationBarComponent navigationBar;
+    private static SoftAssert softAssert = new SoftAssert();
 
     public SignupPage(Page page) {
         this.page = page;
@@ -172,7 +174,7 @@ public class SignupPage {
     // Validations
     @Step("Verify account created label is visible")
     public SignupPage verifyAccountCreated() {
-        Assertions.assertTrue(
+        Assert.assertTrue(
                 page.locator(accountCreatedLabel).nth(0).isVisible(),
                 "Account Created label is NOT visible");
         return this;
@@ -180,7 +182,7 @@ public class SignupPage {
 
     @Step("Verify user is on signup page")
     public SignupPage verifyOnSignupPage() {
-        Assertions.assertTrue(
+        Assert.assertTrue(
                 page.locator(createAccountButton).isVisible(),
                 "User is NOT on signup page");
         return this;

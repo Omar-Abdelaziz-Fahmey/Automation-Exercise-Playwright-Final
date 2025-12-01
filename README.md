@@ -59,7 +59,7 @@ mvn clean test -DsuiteXmlFile=testng.xml
 You can run tests based on their functional groups using the provided XML suites:
 
 *   **Regression:** `mvn clean test -DsuiteXmlFile=regression.xml`
-*   **Smoke/Checkout:** `mvn clean test -DsuiteXmlFile=checkout.xml`
+*   **Checkout:** `mvn clean test -DsuiteXmlFile=checkout.xml`
 *   **Login:** `mvn clean test -DsuiteXmlFile=login.xml`
 *   **Registration:** `mvn clean test -DsuiteXmlFile=register.xml`
 *   **Products:** `mvn clean test -DsuiteXmlFile=products.xml`
@@ -94,5 +94,5 @@ src
 ```
 
 ## 👤 Author
-**Omar**
+**Omar Abdelaziz**
 *   Graduation Project - ITI

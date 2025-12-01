@@ -5,7 +5,7 @@ import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Assertions;
+import org.testng.Assert;
 
 public class TestCasesPage {
 
@@ -33,7 +33,7 @@ public class TestCasesPage {
     @Step("Validate Test Cases page is displayed")
     public TestCasesPage validateTestCasesPageIsDisplayed() {
         LogsManager.info("Validating Test Cases page is displayed");
-        Assertions.assertTrue(page.locator(testCasesLabel).isVisible());
+        Assert.assertTrue(page.locator(testCasesLabel).isVisible());
         return this;
     }
 

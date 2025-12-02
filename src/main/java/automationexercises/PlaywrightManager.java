@@ -1,6 +1,7 @@
 package automationexercises;
 
 import automationexercises.utils.dataReader.PropertyReader;
+import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.*;
 
 public class PlaywrightManager {
@@ -34,7 +35,12 @@ public class PlaywrightManager {
         if (page == null) {
             context = browser.newContext(new Browser.NewContextOptions().setViewportSize(null));
             page = context.newPage();
-            page.navigate(PropertyReader.getProperty("baseUrlWeb"));
+            try {
+                page.navigate((PropertyReader.getProperty("baseUrlWeb")));
+            } catch (TimeoutError e) {
+                // ignore or just log
+                LogsManager.error("TimeoutError ignored");
+            }
         }
         return page;
     }

@@ -49,9 +49,26 @@
     "exMonth": "12",
     "exYear": "2036"
   },
+  "subscription": {
+    "email": "automation_subscription@gmail.com"
+  },
+  "review": {
+    "name": "Automation Reviewer",
+    "email": "automation_reviewer@gmail.com",
+    "review": "This is an automation review."
+  },
+  "contactUs": {
+    "subject": "Automation Subject",
+    "message": "This is an automation message."
+  },
   "messages": {
     "cartAdded": "Your product has been added to cart.",
-    "paymentSuccess": "ORDER PLACED!"
+    "paymentSuccess": "ORDER PLACED!",
+    "subscriptionSuccess": "You have been successfully subscribed!",
+    "review": "Thank you for your review.",
+    "contactUsSuccess": "Success! Your details have been submitted successfully.",
+    "successMessage": "Success! Your details have been submitted successfully.",
+    "alertMessage": "Press OK to proceed!"
   },
   "invoiceName": "invoice.txt"
 }

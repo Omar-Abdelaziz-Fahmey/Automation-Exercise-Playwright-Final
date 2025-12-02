@@ -37,4 +37,16 @@ public class ProductsTest extends BaseTest {
                                                 testData.getJsonData("messages.cartAdded"));
         }
 
+    @Test(groups = { "product", "regression" })
+    @Story("Product Management")
+    @Description("Verify Subscription in Product page")
+    public void verifySubscriptionInProductPageTest() {
+        new ProductsPage(page).navigate()
+                .subscriptionBar
+                .enterSubscriptionEmail(testData.getJsonData("subscription.email"))
+                .validateSubscriptionSuccessMessage(testData.getJsonData("messages.subscriptionSuccess"));
+
+
+    }
+
 }

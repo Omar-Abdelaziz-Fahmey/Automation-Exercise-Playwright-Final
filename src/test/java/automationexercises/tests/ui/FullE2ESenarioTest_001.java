@@ -21,7 +21,7 @@ import java.time.format.DateTimeFormatter;
 @Story("Full E2E Flow")
 @Severity(SeverityLevel.CRITICAL)
 @Owner("Omar")
-public class FullE2ESenarioTest extends BaseTest {
+public class FullE2ESenarioTest_001 extends BaseTest {
     private final static String timestamp = TimeManager.getSimpleTimestamp();
     JsonReader testData = new JsonReader("full-e2e-data");
 

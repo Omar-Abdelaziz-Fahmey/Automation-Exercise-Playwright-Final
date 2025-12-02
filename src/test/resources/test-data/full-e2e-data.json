@@ -1,0 +1,57 @@
+{
+  "name": "Automation_FullE2E",
+  "email": "automation_fulle2e_",
+  "password": "P@ssw0rd",
+  "titleMale": "Mr",
+  "day": "1",
+  "month": "January",
+  "year": "2000",
+  "firstName": "Automation_Firstname",
+  "lastName": "Automation_Lastname",
+  "companyName": "Automation_Company",
+  "address1": "Automation_Address1",
+  "address2": "Automation_Address2",
+  "country": "India",
+  "state": "Automation_State",
+  "city": "Automation_City",
+  "zipcode": "12345",
+  "mobileNumber": "1234567890",
+  "products": [
+    {
+      "name": "Green Side Placket Detail T-Shirt",
+      "price": "Rs. 1000",
+      "quantity": "1",
+      "total": "Rs. 1000"
+    },
+    {
+      "name": "Little Girls Mr. Panda Shirt",
+      "price": "Rs. 1200",
+      "quantity": "1",
+      "total": "Rs. 1200"
+    },
+    {
+      "name": "Frozen Tops For Kids",
+      "price": "Rs. 278",
+      "quantity": "1",
+      "total": "Rs. 278"
+    },
+    {
+      "name": "Soft Stretch Jeans",
+      "price": "Rs. 799",
+      "quantity": "1",
+      "total": "Rs. 799"
+    }
+  ],
+  "card": {
+    "cardName": "Automation Card",
+    "cardNumber": "1234567890123456",
+    "cvc": "123",
+    "exMonth": "12",
+    "exYear": "2036"
+  },
+  "messages": {
+    "cartAdded": "Your product has been added to cart.",
+    "paymentSuccess": "ORDER PLACED!"
+  },
+  "invoiceName": "invoice.txt"
+}

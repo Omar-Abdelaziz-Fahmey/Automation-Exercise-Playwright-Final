@@ -76,21 +76,27 @@ This will start a local web server and open the report in your default browser.
 
 ## 📂 Project Structure
 ```
-src
-├── main
-│   └── java
-│       └── automationexercises
-│           ├── apis        # API Request wrappers
-│           ├── pages       # Page Object Classes
-│           └── utils       # Utilities (JSON reader, Time, etc.)
-└── test
-    ├── java
-    │   └── automationexercises
-    │       └── tests
-    │           └── ui      # Test Classes (LoginTest, CheckoutTest, etc.)
-    └── resources
-        ├── test-data       # JSON Data files
-        └── *.xml           # TestNG Suite files
+Playwright-Project
+├── src/
+│   ├── main/java/          # Source code
+│   │   └── automationexercises/
+│   │       ├── apis/       # API implementation classes
+│   │       ├── pages/      # Page Object classes
+│   │       ├── utils/      # Utility classes (JSON reader, etc.)
+│   │       ├── FileUtils.java
+│   │       └── PlaywrightManager.java
+│   └── test/java/          # Test code
+│       └── automationexercises/
+│           ├── base/       # Base Test class
+│           ├── listeners/  # TestNG listeners
+│           └── tests/
+│               └── ui/     # UI Test classes
+├── src/test/resources/     # Test resources
+│   ├── downloads/          # Downloaded files during tests
+│   └── test-data/          # JSON data files
+├── *.xml                   # TestNG Suite files (testng.xml, regression.xml, etc.)
+├── pom.xml                 # Maven dependencies and build configuration
+└── README.md               # Project documentation
 ```
 
 ## 👤 Author

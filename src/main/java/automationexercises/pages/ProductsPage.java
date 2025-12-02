@@ -1,6 +1,7 @@
 package automationexercises.pages;
 
 import automationexercises.pages.components.NavigationBarComponent;
+import automationexercises.pages.components.SubscriptionComponent;
 import automationexercises.utils.dataReader.PropertyReader;
 import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Locator;
@@ -14,10 +15,13 @@ public class ProductsPage {
 
     private final Page page;
     public NavigationBarComponent navigationBar;
+    public SubscriptionComponent subscriptionBar;
 
     public ProductsPage(Page page) {
         this.page = page;
         this.navigationBar = new NavigationBarComponent(page);
+        this.subscriptionBar=new SubscriptionComponent(page);
+
     }
 
     // variables

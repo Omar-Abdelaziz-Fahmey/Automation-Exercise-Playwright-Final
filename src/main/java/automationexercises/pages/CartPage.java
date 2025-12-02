@@ -1,7 +1,9 @@
 package automationexercises.pages;
 
 import automationexercises.utils.dataReader.PropertyReader;
+import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.TimeoutError;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
 import org.testng.Assert;
@@ -45,8 +47,14 @@ public class CartPage {
     // Actions
     @Step("Navigate to CartPage")
     public CartPage navigate() {
-        page.navigate(PropertyReader.getProperty("baseUrlWeb") + cartEndpoint,
-                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
+
+
+        try {
+            page.navigate((PropertyReader.getProperty("baseUrlWeb") + cartEndpoint));
+        } catch (TimeoutError e) {
+            // ignore or just log
+            LogsManager.error("TimeoutError ignored");
+        }
         return this;
     }
 

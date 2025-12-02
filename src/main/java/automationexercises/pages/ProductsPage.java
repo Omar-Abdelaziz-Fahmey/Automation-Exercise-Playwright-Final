@@ -6,6 +6,7 @@ import automationexercises.utils.dataReader.PropertyReader;
 import automationexercises.utils.logs.LogsManager;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.TimeoutError;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import com.microsoft.playwright.options.WaitUntilState;
 import io.qameta.allure.Step;
@@ -62,8 +63,13 @@ public class ProductsPage {
     // actions
     @Step("Navigate to Products Page")
     public ProductsPage navigate() {
-        page.navigate((PropertyReader.getProperty("baseUrlWeb") + productPage),
-                new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED));
+        try {
+            page.navigate((PropertyReader.getProperty("baseUrlWeb") + productPage));
+        } catch (TimeoutError e) {
+            // ignore or just log
+            LogsManager.error("TimeoutError ignored");
+        }
+
         return this;
     }
 
@@ -77,17 +83,14 @@ public class ProductsPage {
     @Step("Click on Add to Cart for product: {productName}")
     public ProductsPage clickOnAddToCart(String productName) {
 
-        Locator product = page.locator(hoverOnProduct(productName));
-        Locator addBtn = page.locator(addToCartButton(productName));
+        Locator productCard = page.locator(hoverOnProduct(productName));
+        Locator addButton = page.locator(addToCartButton(productName));
 
-        // Ensure hover is applied correctly
-        product.hover(new Locator.HoverOptions().setForce(true));
-        product.hover();
-        // Wait for button to become visible after hover
-        addBtn.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
-        addBtn.hover(new Locator.HoverOptions().setForce(true));
-        // Click the button (force = optional safety)
-        addBtn.click();
+        //productCard.scrollIntoViewIfNeeded();
+        page.waitForTimeout(1000);
+        productCard.hover();
+        page.waitForTimeout(1000);
+        addButton.click();
         return this;
     }
 

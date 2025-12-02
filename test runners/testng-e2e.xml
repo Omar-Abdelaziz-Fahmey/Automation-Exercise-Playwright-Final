@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E2E Suite">
+    <test name="E2E Tests">
+        <classes>
+            <class name="automationexercises.tests.ui.FullE2ESenarioTest_001"/>
+            <class name="automationexercises.tests.ui.FullE2ESenarioTest_002"/>
+            <class name="automationexercises.tests.ui.FullE2ESenarioTest_003"/>
+        </classes>
+    </test>
+</suite>

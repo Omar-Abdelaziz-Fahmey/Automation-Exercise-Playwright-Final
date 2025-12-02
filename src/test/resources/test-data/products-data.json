@@ -1,15 +1,15 @@
 {
   "product1": {
-    "name": "Men Tshirt",
-    "price": "Rs. 400",
+    "name": "Little Girls Mr. Panda Shirt",
+    "price": "Rs. 1200",
     "quantity": "1",
-    "total": "Rs. 400"
+    "total": "Rs. 1200"
   },
   "searchedProduct": {
-    "name": "Blue Top",
-    "price": "Rs. 500",
+    "name": "Frozen Tops For Kids",
+    "price": "Rs. 278",
     "quantity": "1",
-    "total": "Rs. 500"
+    "total": "Rs. 278"
   },
   "messages": {
     "cartAdded": "Your product has been added to cart.",

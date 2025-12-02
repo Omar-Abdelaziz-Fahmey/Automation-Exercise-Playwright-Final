@@ -78,6 +78,15 @@ public class ContactUsPage {
         return this;
     }
 
+    @Step("Add review with Name: {name}, Email: {email}, Subject: {subject}, Message: {message}")
+    public ContactUsPage addReview(String name, String email, String subject, String message) {
+        page.locator(nameInput).fill(name);
+        page.locator(emailInput).fill(email);
+        page.locator(subjectInput).fill(subject);
+        page.locator(messageInput).fill(message);
+        page.locator(submitButton).click();;
+        return this;
+    }
     @Step("Click Submit Button")
     public ContactUsPage clickSubmitButton() {
         page.locator(submitButton).click();

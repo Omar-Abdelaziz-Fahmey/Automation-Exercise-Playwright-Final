@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  TARGET: "%regex[.*Tests.*],automationexercises.tests.**.**,automationexercises.tests.**"
+  TARGET: "%regex[.*Test.*],automationexercises.tests.**.**,automationexercises.tests.**"
 
 jobs:
   Chrome_Linux_Test:

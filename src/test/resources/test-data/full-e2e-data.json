@@ -63,7 +63,7 @@
   },
   "messages": {
     "cartAdded": "Your product has been added to cart.",
-    "paymentSuccess": "ORDER PLACED!",
+    "paymentSuccess": "Order Placed!",
     "subscriptionSuccess": "You have been successfully subscribed!",
     "review": "Thank you for your review.",
     "contactUsSuccess": "Success! Your details have been submitted successfully.",

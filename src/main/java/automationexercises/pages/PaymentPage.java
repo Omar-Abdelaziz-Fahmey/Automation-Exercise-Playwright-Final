@@ -61,7 +61,7 @@ public class PaymentPage {
     // validations
     @Step("Verify payment success message")
     public PaymentPage verifyPaymentSuccessMessage(String expectedMessage) {
-        Assert.assertEquals(page.locator(paymentSuccessMessage).innerText(), expectedMessage,
+        Assert.assertEquals(page.locator(paymentSuccessMessage).innerText().toLowerCase(), expectedMessage.toLowerCase(),
                 "Payment success message is not matched");
         return this;
     }

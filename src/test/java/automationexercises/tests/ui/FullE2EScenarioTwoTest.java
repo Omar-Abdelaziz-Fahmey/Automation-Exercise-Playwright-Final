@@ -16,89 +16,92 @@ import java.io.ByteArrayInputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+
 @Epic("Automation Exercise")
 @Feature("UI Full E2E Scenario")
 @Story("Full E2E Flow")
 @Severity(SeverityLevel.CRITICAL)
 @Owner("Omar")
-public class FullE2ESenarioTest_001 extends BaseTest {
+public class FullE2EScenarioTwoTest extends BaseTest {
+
     private final static String timestamp = TimeManager.getSimpleTimestamp();
-    JsonReader testData = new JsonReader("full-e2e-data");
+    JsonReader testData = new JsonReader("checkout-data");
 
 
 
     @Test(groups = { "e2e", "regression" })
     @Story("Full E2E Flow")
-    @Description("Register a new account")
+    @Description("Add product to cart without login")
     @Severity(SeverityLevel.CRITICAL)
-    public void registerNewAccount() {
-        new UserManagementAPI().createRegisterUserAccount(
-                testData.getJsonData("name"),
-                testData.getJsonData("email") + timestamp + "@gmail.com",
-                testData.getJsonData("password"),
-                testData.getJsonData("titleMale"),
-                testData.getJsonData("day"),
-                testData.getJsonData("month"),
-                testData.getJsonData("year"),
-                testData.getJsonData("firstName"),
-                testData.getJsonData("lastName"),
-                testData.getJsonData("companyName"),
-                testData.getJsonData("address1"),
-                testData.getJsonData("address2"),
-                testData.getJsonData("country"),
-                testData.getJsonData("zipcode"),
-                testData.getJsonData("state"),
-                testData.getJsonData("city"),
-                testData.getJsonData("mobileNumber"))
-                .verifyUserCreatedSuccessfully();
+    public void verifyProductDetailsOnCartWithOutLogInTC() {
+        new ProductsPage(page).navigationBar.clickProductsButton()
+                .clickOnAddToCart(testData.getJsonData("product.name"))
+                .validateProductAddedToCart(testData.getJsonData("messages.cartAdded"))
+                .clickOnViewCart()
+                .verifyProductDetailsOnCart(
+                        testData.getJsonData("product.name"),
+                        testData.getJsonData("product.price"),
+                        testData.getJsonData("product.quantity"),
+                        testData.getJsonData("product.total"));
     }
 
-    @Test(dependsOnMethods = "registerNewAccount", groups = { "e2e", "regression" })
+    @Test(dependsOnMethods = "verifyProductDetailsOnCartWithOutLogInTC", groups = { "e2e", "regression" })
     @Story("Full E2E Flow")
-    @Description("Login to the account")
+    @Description("Proceed to checkout without register")
     @Severity(SeverityLevel.CRITICAL)
-    public void loginToAccount() {
-        new SignupLoginPage(page).navigate()
-                .enterLoginEmail(testData.getJsonData("email") + timestamp + "@gmail.com")
-                .enterLoginPassword(testData.getJsonData("password"))
-                .clickLoginButton().navigationBar
-                .verifyLoggedInUserName(testData.getJsonData("name"));
-    }
-
-    @Test(dependsOnMethods = "loginToAccount", groups = { "e2e", "regression" })
-    @Story("Full E2E Flow")
-    @Description("Add 4 different products to cart")
-    @Severity(SeverityLevel.CRITICAL)
-    public void addProductsToCart() {
-        ProductsPage productsPage = new ProductsPage(page);
-        productsPage.navigate();
-
-        for (int i = 0; i < 4; i++) {
-            String productName = testData.getJsonData("products[" + i + "].name");
-            productsPage
-                    .clickOnAddToCart(productName)
-                    .validateProductAddedToCart(testData.getJsonData("messages.cartAdded"))
-                    .clickOnContinueShopping();
-        }
-
-        productsPage.navigationBar.clickOnCartButton();
-
-        CartPage cartPage = new CartPage(page);
-        for (int i = 0; i < 4; i++) {
-            cartPage.verifyProductDetailsOnCart(
-                    testData.getJsonData("products[" + i + "].name"),
-                    testData.getJsonData("products[" + i + "].price"),
-                    testData.getJsonData("products[" + i + "].quantity"),
-                    testData.getJsonData("products[" + i + "].total"));
-        }
-    }
-
-    @Test(dependsOnMethods = "addProductsToCart", groups = { "e2e", "regression" })
-    @Story("Full E2E Flow")
-    @Description("Proceed to checkout")
-    @Severity(SeverityLevel.CRITICAL)
-    public void checkout() {
+    public void checkoutWithoutRegister() {
         new CartPage(page)
+                .clickOnProceedToCheckoutWithOutRegister()
+                .clickOnRegisterLogin()
+                .verifySignupLabelVisible();
+
+    }
+
+    @Test(dependsOnMethods = "checkoutWithoutRegister", groups = { "e2e", "regression" })
+    @Story("Full E2E Flow")
+    @Description("Register during checkout")
+    @Severity(SeverityLevel.CRITICAL)
+    public void registerDuringCheckout() {
+        new SignupLoginPage(page)
+                .enterSignupEmail(testData.getJsonData("email") + timestamp + "@gmail.com")
+                .enterSignupName(testData.getJsonData("name"))
+                .clickSignupButton();
+
+        new SignupPage(page)
+                .chooseTitle(testData.getJsonData("titleMale"))
+                .enterPassword(testData.getJsonData("password"))
+                .selectDateOfBirth(
+                        testData.getJsonData("day"),
+                        testData.getJsonData("month"),
+                        testData.getJsonData("year"))
+                .subscribeToNewsletter()
+                .receiveSpecialOffers()
+                .enterFirstName(testData.getJsonData("firstName"))
+                .enterLastName(testData.getJsonData("lastName"))
+                .enterCompany(testData.getJsonData("companyName"))
+                .enterAddress1(testData.getJsonData("address1"))
+                .enterAddress2(testData.getJsonData("address2"))
+                .selectCountry(testData.getJsonData("country"))
+                .enterState(testData.getJsonData("state"))
+                .enterCity(testData.getJsonData("city"))
+                .enterZipcode(testData.getJsonData("zipcode"))
+                .enterMobileNumber(testData.getJsonData("mobileNumber"))
+                .clickCreateAccountButton()
+                .verifyAccountCreated();
+    }
+
+    @Test(dependsOnMethods = "registerDuringCheckout", groups = { "e2e", "regression" })
+    @Story("Full E2E Flow")
+    @Description("Complete checkout after registering")
+    @Severity(SeverityLevel.CRITICAL)
+    public void completeCheckoutAfterRegistering() {
+        new CartPage(page)
+                .navigate()
+                .verifyProductDetailsOnCart(
+                        testData.getJsonData("product.name"),
+                        testData.getJsonData("product.price"),
+                        testData.getJsonData("product.quantity"),
+                        testData.getJsonData("product.total"))
                 .clickOnProceedToCheckout()
                 .verifyDeliveryAddress(
                         testData.getJsonData("titleMale"),
@@ -124,42 +127,43 @@ public class FullE2ESenarioTest_001 extends BaseTest {
                         testData.getJsonData("zipcode"),
                         testData.getJsonData("country"),
                         testData.getJsonData("mobileNumber"));
+
     }
 
-    @Test(dependsOnMethods = "checkout", groups = { "e2e", "regression" })
+    @Test(dependsOnMethods = "completeCheckoutAfterRegistering", groups = { "e2e", "regression" })
     @Story("Full E2E Flow")
-    @Description("Make payment")
+    @Description("Make payment after registering")
     @Severity(SeverityLevel.CRITICAL)
-    public void paymentTest() {
+    public void paymentAfterRegisteringTest() {
         new CheckoutPage(page)
                 .clickOnPlaceOrder()
-                .fillCardInfo(testData.getJsonData("card.cardName"), testData.getJsonData("card.cardNumber"),
+                .fillCardInfo(testData.getJsonData("card.cardName"),
+                        testData.getJsonData("card.cardNumber"),
                         testData.getJsonData("card.cvc"), testData.getJsonData("card.exMonth"),
                         testData.getJsonData("card.exYear"))
                 .verifyPaymentSuccessMessage(testData.getJsonData("messages.paymentSuccess"));
     }
 
-    @Test(dependsOnMethods = "paymentTest", groups = { "e2e", "regression" })
+    @Test(dependsOnMethods = "paymentAfterRegisteringTest", groups = { "e2e", "regression" })
     @Story("Full E2E Flow")
-    @Description("Download invoice")
+    @Description("Download invoice after registering")
     @Severity(SeverityLevel.NORMAL)
-    public void downloadInvoice() {
+    public void downloadInvoiceAfterRegisteringTest() {
         new PaymentPage(page)
                 .clickOnDownloadInvoiceButton()
                 .verifyDownloadedFile(testData.getJsonData("invoiceName"));
     }
 
-    @Test(dependsOnMethods = "downloadInvoice", groups = { "e2e", "regression" })
+    @Test(dependsOnMethods = "downloadInvoiceAfterRegisteringTest", groups = { "e2e", "regression" })
     @Story("Full E2E Flow")
-    @Description("Delete account")
+    @Description("Delete account after registering")
     @Severity(SeverityLevel.MINOR)
-    public void deleteAccount() {
+    public void deleteAccountAsPostConditionAfterRegisteringTest() {
         new UserManagementAPI()
                 .deleteUserAccount(testData.getJsonData("email") + timestamp + "@gmail.com",
                         testData.getJsonData("password"))
                 .verifyUserDeletedSuccessfully();
     }
-
 
     @AfterMethod
     @Step("Close page and capture final state")
